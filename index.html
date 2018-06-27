@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leonardo da Vinci</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Italianno|Old+Standard+TT:400,400i|Ubuntu+Mono" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="title" class="text-center">
+      <h1>Leonardo da Vinci</h1>
+      <figure id="img-div">
+        <!-- https://s15.postimg.cc/ipjkc6v3v/leonardo-da-vinci.jpg -->
+        <img id="image" src="./img/leonardo-da-vinci.jpg" alt="Leonardo da Vinci">
+        <figcaption id="img-caption">Portrait of Leonardo da Vinci</figcaption>
+      </figure>
+      <h3>Da Vinci used to write backward</h3>
+      <h4>Why don't you click on the button below to see the mirrored text?</h4>
+			<button class="btn btn-default btn-lg" id="flip_btn">| click |</button>
+    </div>
+
+    <main id="main">
+      <div class="row">
+        <div class="img_background">
+          <div id="tribute-info" class="flipper">
+            <div class="front">
+              <article>
+                <p>Leonardo di ser Piero da Vinci (15 April 1452 – 2 May 1519), more commonly Leonardo da Vinci or simply Leonardo, was an Italian Renaissance polymath whose areas of interest included invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He has been variously called the father of palaeontology, ichnology, and architecture, and is widely considered one of the greatest painters of all time. Sometimes credited with the inventions of the parachute, helicopter and tank, he epitomised the Renaissance humanist ideal.</p>
+                <p>Many historians and scholars regard Leonardo as the prime exemplar of the &quot;Universal Genius&quot; or &quot;Renaissance Man&quot;, an individual of &quot;unquenchable curiosity&quot; and &quot;feverishly inventive imagination&quot;, and he is widely considered one of the most diversely talented individuals ever to have lived.</p>
+                <p>The unique fame that Leonardo enjoyed in his lifetime and that, filtered by historical criticism, has remained undimmed to the present day rests largely on his unlimited desire for knowledge, which guided all his thinking and behaviour. An artist by disposition and endowment, he considered his eyes to be his main avenue to knowledge; to Leonardo, sight was man’s highest sense because it alone conveyed the facts of experience immediately, correctly, and with certainty. Hence, every phenomenon perceived became an object of knowledge, and saper vedere (&quot;knowing how to see&quot;) became the great theme of his studies. He applied his creativity to every realm in which graphic representation is used: he was a painter, sculptor, architect, and engineer. But he went even beyond that. He used his superb intellect, unusual powers of observation, and mastery of the art of drawing to study nature itself, a line of inquiry that allowed his dual pursuits of art and science to flourish.</p>
+              </article>
+            </div>
+            <div class="back">
+              <article class="mirror">
+                <p>Leonardo di ser Piero da Vinci (15 April 1452 – 2 May 1519), more commonly Leonardo da Vinci or simply Leonardo, was an Italian Renaissance polymath whose areas of interest included invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. He has been variously called the father of palaeontology, ichnology, and architecture, and is widely considered one of the greatest painters of all time. Sometimes credited with the inventions of the parachute, helicopter and tank, he epitomised the Renaissance humanist ideal.</p>
+                <p>Many historians and scholars regard Leonardo as the prime exemplar of the &quot;Universal Genius&quot; or &quot;Renaissance Man&quot;, an individual of &quot;unquenchable curiosity&quot; and &quot;feverishly inventive imagination&quot;, and he is widely considered one of the most diversely talented individuals ever to have lived.</p>
+                <p>The unique fame that Leonardo enjoyed in his lifetime and that, filtered by historical criticism, has remained undimmed to the present day rests largely on his unlimited desire for knowledge, which guided all his thinking and behaviour. An artist by disposition and endowment, he considered his eyes to be his main avenue to knowledge; to Leonardo, sight was man’s highest sense because it alone conveyed the facts of experience immediately, correctly, and with certainty. Hence, every phenomenon perceived became an object of knowledge, and saper vedere (&quot;knowing how to see&quot;) became the great theme of his studies. He applied his creativity to every realm in which graphic representation is used: he was a painter, sculptor, architect, and engineer. But he went even beyond that. He used his superb intellect, unusual powers of observation, and mastery of the art of drawing to study nature itself, a line of inquiry that allowed his dual pursuits of art and science to flourish.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer id="bottom_page">
+    <div class="text-center">
+      <p>If you want to know more about him, click <a id="tribute-link" href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank">here</a>.</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery.flip.min.js" type="text/javascript"></script>
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  <!-- jQuery flip effect -->
+  <script>
+  $(document).ready(function () {
+
+    $('.flipper').flip({
+      trigger: 'manual',
+    });
+
+    $(document).on('click', '#flip_btn', function () {
+      $('.flipper').flip('toggle');
+    });
+
+  });
+  </script>
+</body>
+</html>
