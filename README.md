@@ -1,2 +1,1 @@
-# FreeCodeCamp Project
-## Tribute Page
+# Tribute Page
